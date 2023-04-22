@@ -10,5 +10,4 @@ Version 1.1.0 (2023.03.27)
 
 Developed by
 -------------
-* soft4biz <office@soft4biz.ro>
 * Raduly Izabela <iza@soft4biz.ro>
