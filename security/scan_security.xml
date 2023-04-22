@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="scan_module_category" model="ir.module.category">
+            <field name="name">Scan</field>
+            <field name="description">People in this category will land directly on Scan page.</field>
+            <field name="visible" eval="0"/>
+            <field name="sequence">100</field>
+        </record>
+
+        <record id="scan_group_user" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="scan_module_category"/>
+        </record>
+
+    </data>
+</odoo>

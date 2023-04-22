@@ -1,0 +1,286 @@
+.oe_structure{
+    position: fixed;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+.card.page-container {
+    max-width: 90rem;
+    margin: 3rem auto auto auto;
+    min-height: 40rem;
+    padding: 3% 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid white;
+    box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+    -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
+    -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
+}
+.user-details{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: solid 1px #c0c0c0;
+
+}
+.name>a{
+    text-decoration: none;
+    color: #3a3d42;
+}
+.name .dropdown-menu{
+    min-width: 7em;
+}
+.name .dropdown-toggle img{
+    display: block;
+}
+.name .dropdown-toggle p{
+    display: inline;
+}
+
+.profile-picture{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.button-back{
+    background-color: #71639e;
+    font-size: 18px;
+    padding: 10px 15px;
+    width:8em;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.button-back i{ 
+    margin-block-start: 0.3em;
+}
+.button-back:focus {
+    box-shadow: 0 0 0 0.2rem rgb(134 122 173 / 50%);
+}
+.title{
+    border: 1px solid #e2e2e2 !important;
+    border-radius: 9px;
+    text-align: center;
+}
+.title.row{
+    height: 6rem;
+}
+
+.details.card{
+    width: 30rem;
+    margin: 2rem auto;
+    font-size: 20px;
+}
+.details.card p:nth-child(2n+1){
+    color: #3a3d42;
+    font-weight: 500;
+}
+.details.card p:nth-child(2n){
+    color: #71639e;
+    font-weight: 500;
+}
+.title.card,.details.card{
+    padding: 1rem;
+    border: none;
+    height: inherit;
+}
+.title h3{
+    font-size: 24px;
+}
+.form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+}
+.form .row{
+    --bs-gutter-x: 0rem;
+}
+
+.form .details{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.form h3{
+    color:#3a3d42;
+}
+.field {
+    padding-bottom: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.timer{
+    width: 7em;
+    margin: 0 auto;
+    height: 7em;
+}
+
+.status{
+    text-align: center;
+}
+.state.col{
+    max-height: 10rem;
+}
+
+.circle{
+    background-color: #3596357f;
+    border-radius: 50%;
+    padding: 2em;
+    width: fit-content;
+    margin: 1em auto;
+    
+}
+#done-state i{
+    font-size: 50px;
+    color:#359635;
+}
+
+#done-state p{
+    text-align: center;
+    color:#359635;
+    font-size: 20px;
+}
+
+.buttons.field {
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    bottom: 0rem;
+}
+.button-start, .button-stop, .button-pause , .button-block{
+    margin-top: 10px;
+    font-size: 23px;
+    padding: 7px 12px;
+    height: 7rem;
+    width: 9rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.button-start{
+    background-color:#359635c1;
+}
+.button-pause{
+    background-color:#ffd500b6;
+
+}
+.button-stop{
+    background-color:#ff0000b7;
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+
+
+@media (max-width: 767.98px) { 
+    .card.page-container{
+        display: block;
+        margin: 0;
+        padding:0;
+    }
+    .user-details{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        max-height: 3rem;
+        border-bottom: solid 1px #c0c0c0;
+        border-right:none;
+        padding: 0.7em 1em;
+        background-color: #71639e;
+    }
+
+    .name{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-bottom: 1em;
+    }
+
+    .profile-picture{
+        width: 2rem;
+        height: max-content;
+    }
+    .name p{
+        display: inline;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-size: 15px;
+        color: white;
+    }
+
+    .name .dropdown-menu{
+        min-width: 7em;
+        inset: 25px 0px auto auto !important;
+    }
+    .name .dropdown-toggle img{
+        display: inline;
+        width: 2rem !important;
+        height: 2em !important;
+    }
+    .button-back {
+        width: 2em;
+        padding: 0 0 1em 0;
+        background: none;
+    }
+    .button-back i{
+        font-size: 20px;
+        color: white;
+    }
+    .button-back a{
+        display: none;
+    }
+    .title.row {
+        height: 7rem;
+    }
+    .form{
+        width: 100%;
+        height: inherit;
+        padding: 1em;
+        min-height: 40rem;
+    }
+    .details.card{
+        width: 20rem;
+    }
+
+
+    .form h3, .form span ,.form p{
+        font-size: 18px;
+    }
+    .buttons.field{
+        width: 92%;
+    }
+    .button-start, .button-stop, .button-pause, .button-block {
+        font-size: 25px;
+        display: block;
+        height: 6rem;
+        width: 6rem;
+        font-weight: 500;
+    }
+    .timer{
+        height: 4em;
+    }
+    
+}
