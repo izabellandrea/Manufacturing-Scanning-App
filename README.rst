@@ -3,7 +3,7 @@
 Scanning app
 ==================================
 
-The aim of the module is to create an interface that can ease automation and monitor production processes in real-time through barcodes and a user-friendly interface.
+The aim of the module is to create an interface that can provide manufacturing digitalization and monitor production processes in real-time through barcodes and a user-friendly interface.
 
 The module includes:
 --------------------
