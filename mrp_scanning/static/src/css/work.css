@@ -1,0 +1,144 @@
+.details.card{
+    width: 30rem;
+    margin: 2rem auto;
+    font-size: 20px;
+}
+.details.card p:nth-child(2n+1){
+    color: #3a3d42;
+    font-weight: 500;
+}
+.details.card p:nth-child(2n){
+    color: #71639e;
+    font-weight: 500;
+}
+.title.card,.details.card{
+    padding: 1rem;
+    border: none;
+    height: inherit;
+}
+.title h3{
+    font-size: 24px;
+}
+
+.form .row{
+    --bs-gutter-x: 0rem;
+}
+
+.form .details{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.form h3{
+    color:#3a3d42;
+}
+.field {
+    padding-bottom: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.timer{
+    width: 7em;
+    margin: 0 auto;
+    height: 7em;
+}
+
+.status{
+    text-align: center;
+}
+.state.col{
+    max-height: 11rem;
+}
+
+.circle{
+    background-color: #3596357f;
+    border-radius: 50%;
+    padding: 2em;
+    width: fit-content;
+    margin: 1em auto;
+    
+}
+#done-state i{
+    font-size: 50px;
+    color:#359635;
+}
+
+#done-state p{
+    text-align: center;
+    color:#359635;
+    font-size: 20px;
+}
+
+.buttons.field {
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    /*position: absolute;*/
+    position: relative;
+    width: 100%;
+    bottom: 0rem;
+}
+.button-start, .button-stop, .button-pause , .button-block{
+    margin-top: 10px;
+    font-size: 23px;
+    padding: 7px 12px;
+    height: 7rem;
+    width: 9rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.button-start{
+    background-color:#359635c1;
+}
+.button-pause{
+    background-color:#ffd500b6;
+
+}
+.button-stop{
+    background-color:#ff0000b7;
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+
+
+@media (max-width: 767.98px) { 
+
+    .title.row {
+        height: 7rem;
+    }
+    .form{
+        width: 100%;
+        padding: 1em;
+        min-height: 40rem;
+    }
+    .details.card{
+        width: 20rem;
+    }
+
+    .form h3, .form span ,.form p{
+        font-size: 18px;
+    }
+    /*.buttons.field{
+        width: 92%;
+    }*/
+    .button-start, .button-stop, .button-pause, .button-block {
+        font-size: 25px;
+        display: block;
+        height: 6rem;
+        width: 6rem;
+        font-weight: 500;
+    }
+    .timer{
+        height: 4em;
+    }
+    
+}
